@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+raftenv/
+.env/
+.env.*
+*.env
+
+# Flask cache files
+instance/
+*.sqlite3
+*.db
+
+# macOS files
+.DS_Store
+
+# Logs and database
+*.log
+*.sqlite
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint
+pylint.log
+
+# Profiling data
+.prof
+
+# pytest
+.pytest_cache/
+
+# Flask specific
+instance/
+.cache/
+
+# VS Code settings
+.vscode/
+__pycache__/
+
+# Other IDE/editor files
+.idea/
+*.swp

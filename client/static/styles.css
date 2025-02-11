@@ -1,0 +1,104 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Message and status feedback */
+p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+p.success {
+    background-color: #4CAF50;
+}
+
+p.error {
+    background-color: #f44336;
+}
+
+/* Kill Nodes section styling */
+.kill-nodes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.kill-nodes button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kill-nodes button:hover {
+    background-color: #E64A19;
+}
+
+.kill-nodes button:active {
+    background-color: #D84315;
+}
+
+/* Form styling */
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+button.send-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.send-button:hover {
+    background-color: #0056b3;
+}
+
+button.send-button:active {
+    background-color: #004494;
+}

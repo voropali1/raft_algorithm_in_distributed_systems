@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raft Client</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        // JavaScript to hide the success and error messages after 3 seconds
+        document.addEventListener("DOMContentLoaded", function() {
+            const successMessage = document.getElementById("success-message");
+            const errorMessage = document.getElementById("error-message");
+            if (successMessage) {
+                setTimeout(function() {
+                    successMessage.style.display = "none";
+                }, 3000); // 3000 milliseconds = 3 seconds
+            }
+            if (errorMessage) {
+                setTimeout(function() {
+                    errorMessage.style.display = "none";
+                }, 3000); // 3000 milliseconds = 3 seconds
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Raft Client</h1>
+    
+    <div class="kill-nodes">
+        <form action="{{ url_for('kill_node', node_id='1') }}" method="post">
+            <button type="submit">Kill Node 1</button>
+        </form>
+        <form action="{{ url_for('kill_node', node_id='2') }}" method="post">
+            <button type="submit">Kill Node 2</button>
+        </form>
+        <form action="{{ url_for('kill_node', node_id='3') }}" method="post">
+            <button type="submit">Kill Node 3</button>
+        </form>
+    </div>
+
+    {% if success %}
+        <p id="success-message" class="success">Message sent successfully!</p>
+    {% elif error %}
+        <p id="error-message" class="error">Error: {{ error }}</p>
+    {% endif %}
+
+    <!-- Explicitly set the action to the index endpoint -->
+    <form action="{{ url_for('index') }}" method="post" class="message-form">
+        <input type="text" name="message" placeholder="Enter message" required>
+        <button type="submit" class="send-button">Send Message</button>
+    </form>
+</body>
+</html>

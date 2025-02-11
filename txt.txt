@@ -1,0 +1,15 @@
+{
+  "hostname": "127.0.0.1",
+  "port": 2003,
+  "node_id": 4
+}
+
+{
+  "value": "UUUUUUUUUUUU"
+}
+#desktop
+{
+  "hostname": "127.0.0.1",
+  "port": 2003,
+  "node_id": 4
+}
